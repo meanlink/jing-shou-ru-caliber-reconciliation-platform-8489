@@ -3,3 +3,37 @@ body[data-style*=lab]{--paper:oklch(96% .012 140);--surface:oklch(98% .008 140);
 @media(min-width:1600px){main{padding:45px 65px}.shell{grid-template-columns:270px minmax(0,1fr)}}
 @media(max-width:1100px){.shell{grid-template-columns:206px minmax(0,1fr)}aside{padding:25px 18px}header{padding:0 25px}main{padding:26px 25px}footer{margin:0 25px}.brand{font-size:17px}.overview-hero{gap:20px;padding:24px}.numbers{padding-left:18px;gap:18px}.two-columns{gap:25px}.result-selector{flex-wrap:wrap}.dataset-grid,.report-grid{gap:25px;grid-template-columns:1fr 1.4fr}.workbench-grid{gap:25px}.login-story{padding:45px}.login-form{padding:40px}.timeline li{display:block}.timeline span{display:block;margin-top:5px}}
 @media(max-width:767px){.shell{display:block}aside{position:static;min-height:0;height:auto;padding:20px}.brand{flex-direction:row;align-items:center;font-size:18px}.brand-symbol{width:30px;height:30px}.edition,.aside-note,.account{display:none}nav{flex-direction:row;overflow:auto;margin-top:18px;gap:3px}nav a{padding:10px;white-space:nowrap;font-size:11px}nav a small{display:none}header{height:42px;padding:0 20px}header>span:first-child{max-width:65%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}header .live-dot{font-size:9px}main{padding:24px 20px}.page-heading{display:block}.page-heading>.button{margin-top:15px}.overview-hero{grid-template-columns:1fr;padding:20px}.numbers{border-left:0;border-top:1px solid var(--line);padding:18px 0 0;grid-template-columns:repeat(4,1fr);gap:10px}.numbers strong{font-size:25px}.numbers span{font-size:9px}.two-columns,.dataset-grid,.workbench-grid,.report-grid{grid-template-columns:1fr;gap:20px}.section-title span{max-width:55%}.metrics{gap:20px}.metrics strong{font-size:23px}.result-selector>span{font-size:10px}.result-lead h2{font-size:21px}.method-sheet{padding:22px}.login-scene{display:block}.login-story{padding:70px 30px 30px}.login-story>.edition{top:25px}.login-story h1{font-size:40px}.flow-lines{display:none}.login-foot{margin-top:20px}.login-form{padding:35px 30px;max-width:none}.login-form h2{font-size:28px}footer{margin:0 20px;font-size:8px}.delivery{align-items:flex-start;flex-direction:column}body[data-style*=press] .overview-hero{grid-template-columns:1fr}body[data-style*=press] .narrative{order:0}body[data-style*=press] .numbers{border-right:0;padding:18px 0 0}}
+
+/* Fee pools and allocation sheets */
+.fee-grid{display:grid;grid-template-columns:1.45fr .8fr;gap:38px;align-items:start}
+.fee-grid .panel{margin-top:0}
+.pool-list{display:flex;flex-direction:column;gap:14px;margin-bottom:12px}
+.pool-card,.line-card{border:1px solid var(--line);background:var(--surface);padding:18px}
+.pool-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}
+.pool-head strong{font-size:14px;font-weight:600}
+.pool-head small{display:block;font-size:10px;color:var(--muted);margin-top:5px}
+.pool-numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 8px;border-top:1px solid var(--line);padding-top:14px}
+.pool-numbers div{display:flex;flex-direction:column;gap:6px}
+.pool-numbers span{font-size:10px;color:var(--muted)}
+.pool-numbers strong{font-family:'Noto Serif SC',serif;font-size:19px;font-weight:500}
+.pool-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.sheet-list{display:flex;flex-direction:column;margin-bottom:10px}
+.sheet-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.sheet-row:hover strong{text-decoration:underline;text-underline-offset:4px}
+.sheet-row strong{font-size:13px;font-weight:500}
+.sheet-row small{display:block;font-size:10px;color:var(--muted);margin-top:5px}
+.line-fieldset{border:1px solid var(--line);padding:16px;margin:0 0 20px}
+.line-fieldset legend{font-size:11px;color:var(--muted);padding:0 6px}
+.line-input{flex-direction:row;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.line-input input[type=checkbox]{width:auto;min-width:0}
+.line-input span{flex:1;font-size:12px}
+.line-input input[type=number]{width:130px;padding:8px}
+.line-card{margin-bottom:14px}
+.sheet-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;margin-top:8px}
+.sheet-actions .hint{margin:0}
+.danger{color:oklch(47% .15 30)}
+@media(max-width:1100px){.fee-grid{grid-template-columns:1fr;gap:25px}}
+@media(max-width:767px){.pool-numbers{grid-template-columns:1fr 1fr}.line-input{flex-wrap:wrap}}
+.line-economics{grid-template-columns:repeat(4,1fr);margin-top:4px}
+@media(max-width:767px){.line-economics{grid-template-columns:1fr 1fr}}
+.text-links{display:flex;gap:26px;flex-wrap:wrap}
